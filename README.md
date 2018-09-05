@@ -1,3 +1,10 @@
+for android:
+  extract https://1drv.ms/u/s!Av3iBL1lPNRmgf4pfgVmHqQbR0uFHQ  and https://1drv.ms/u/s!Av3iBL1lPNRmgf4xmyiVKRZnzWxPTA to a folder (I used ~) then update the paths in android.cmake. Then cd intno a build folder and invoke
+```
+cmake -DCMAKE_TOOLCHAIN_FILE=$PATH_TO_REPO/android.cmake $PATH_TO_REPO
+```
+then try to make.
+
 ![Picture](https://krita.org/wp-content/uploads/2016/04/krita_logo_200-ef21fd67a8add4f0.png)
 
 Krita is a free and open source digital painting application. It is for artists who want to create professional work from start to end. Krita is used by comic book artists, illustrators, concept artists, matte and texture painters and in the digital VFX industry.
