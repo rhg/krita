@@ -337,6 +337,7 @@ target_link_libraries(kritaimage
         kritacommand
         kritawidgetutils 
         Qt5::Concurrent
+/home/dashed/crystax-ndk-10.3.2/sources/boost/1.59.0/libs/armeabi-v7a/gnu-4.9/libboost_system.so
 )
 
 target_link_libraries(kritaimage PUBLIC ${Boost_SYSTEM_LIBRARY})

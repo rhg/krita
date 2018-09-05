@@ -45,6 +45,10 @@
 #define GL_BGRA 0x80E1
 #endif
 
+#ifdef __ANDROID__
+#define GL_RGBA8 GL_RGBA
+#endif
+
 // GL_EXT_texture_format_BGRA8888
 #ifndef GL_BGRA_EXT
 #define GL_BGRA_EXT 0x80E1
@@ -295,7 +299,11 @@ void KisOpenGLImageTextures::generateCheckerTexture(const QImage &checkImage)
         if (checkImage.width() != BACKGROUND_TEXTURE_SIZE || checkImage.height() != BACKGROUND_TEXTURE_SIZE) {
             img = checkImage.scaled(BACKGROUND_TEXTURE_SIZE, BACKGROUND_TEXTURE_SIZE);
         }
+#ifndef __ANDROID__
         GLint format = GL_BGRA, internalFormat = GL_RGBA8;
+#else
+        GLint format = GL_RGBA, internalFormat = GL_RGBA8;
+#endif
         if (KisOpenGL::hasOpenGLES()) {
             if (ctx->hasExtension(QByteArrayLiteral("GL_EXT_texture_format_BGRA8888"))) {
                 format = GL_BGRA_EXT;
@@ -475,6 +483,7 @@ void KisOpenGLImageTextures::updateTextureFormat()
 
     dbgUI << "Choosing texture format:";
 
+#ifndef __ANDROID__
     if (colorModelId == RGBAColorModelID) {
         if (colorDepthId == Float16BitsColorDepthID) {
 
@@ -548,6 +557,8 @@ void KisOpenGLImageTextures::updateTextureFormat()
         }
         // TODO: for ANGLE, see if we can convert to 16f to support 10-bit display
     }
+#endif
+
 
     if (!m_internalColorManagementActive &&
             colorModelId != destinationColorModelId) {

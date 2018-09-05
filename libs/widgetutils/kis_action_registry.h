@@ -129,7 +129,7 @@ public:
      * @brief loadShortcutScheme
      * @param schemeName
      */
-    void loadShortcutScheme(const QString &schemeName);
+    // void loadShortcutScheme(const QString &schemeName);
 
     // Undocumented
     void updateShortcut(const QString &name, QAction *ac);

@@ -125,9 +125,9 @@ void KMenuMenuHandler::slotSetShortcut()
     QDialog dialog(m_builder->widget());
     dialog.setLayout(new QVBoxLayout);
 
-    KShortcutWidget swidget(&dialog);
-    swidget.setShortcut(m_popupAction->shortcuts());
-    dialog.layout()->addWidget(&swidget);
+    // KShortcutWidget swidget(&dialog);
+    // swidget.setShortcut(m_popupAction->shortcuts());
+    // dialog.layout()->addWidget(&swidget);
 
     QDialogButtonBox box(&dialog);
     box.setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
@@ -143,12 +143,12 @@ void KMenuMenuHandler::slotSetShortcut()
         foreach (KXMLGUIClient *client, factory->clients()) {
             checkCollections += client->actionCollection();
         }
-        swidget.setCheckActionCollections(checkCollections);
+        // swidget.setCheckActionCollections(checkCollections);
     }
 
     if (dialog.exec()) {
-        m_popupAction->setShortcuts(swidget.shortcut());
-        swidget.applyStealShortcut();
+        // m_popupAction->setShortcuts(swidget.shortcut());
+        // swidget.applyStealShortcut();
         if (parentCollection) {
             parentCollection->writeSettings();
         }

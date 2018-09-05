@@ -1,0 +1,345 @@
+[  0%] Automatic MOC for target kritaversion
+[  0%] Built target kritaversion_autogen
+[  0%] Built target kritaversion
+[  0%] Automatic MOC for target kritaplugin
+AutoMoc warning
+---------------
+  "/home/dashed/Documents/krita/src/libs/koplugin/KoPluginLoader.h"
+Could not find dependency file "myplugin.json"
+
+[  0%] Built target kritaplugin_autogen
+[  0%] Built target kritaplugin
+[  0%] Automatic MOC for target kritaglobal
+[  0%] Built target kritaglobal_autogen
+[  0%] Built target kritaglobal
+[  0%] Automatic MOC for target kritastore
+[  0%] Built target kritastore_autogen
+[  0%] Built target kritastore
+[  0%] Automatic MOC for target kritaodf
+[  0%] Built target kritaodf_autogen
+[  3%] Built target kritaodf
+[  3%] Automatic MOC for target kritawidgetutils
+[  3%] Built target kritawidgetutils_autogen
+[  7%] Built target kritawidgetutils
+[  7%] Automatic MOC for target kritacommand
+[  7%] Built target kritacommand_autogen
+[  7%] Built target kritacommand
+[  7%] Automatic MOC for target kritapigment
+[  7%] Built target kritapigment_autogen
+[ 11%] Built target kritapigment
+[ 11%] Automatic MOC for target kritaflake
+AutoMoc warning
+---------------
+  "/home/dashed/Documents/krita/src/libs/flake/KoToolFactoryBase.h"
+Could not find dependency file "mytool.json"
+
+[ 11%] Built target kritaflake_autogen
+[ 29%] Built target kritaflake
+[ 29%] Automatic MOC for target kritawidgets
+[ 29%] Built target kritawidgets_autogen
+[ 37%] Built target kritawidgets
+[ 37%] Automatic MOC for target kritapsd
+[ 37%] Built target kritapsd_autogen
+[ 37%] Built target kritapsd
+[ 37%] Automatic MOC for target kritaimage
+[ 37%] Built target kritaimage_autogen
+[ 59%] Built target kritaimage
+[ 59%] Automatic MOC for target kritalibbrush
+[ 59%] Built target kritalibbrush_autogen
+[ 59%] Built target kritalibbrush
+[ 59%] Automatic MOC for target kritaimpex
+[ 59%] Built target kritaimpex_autogen
+[ 59%] Built target kritaimpex
+[ 59%] Automatic MOC for target kritacolor
+[ 59%] Built target kritacolor_autogen
+[ 59%] Built target kritacolor
+[ 59%] Automatic MOC for target kritaui
+AutoMoc warning
+---------------
+  "/home/dashed/Documents/krita/src/libs/ui/widgets/kis_screen_color_picker.cpp"
+The file includes the moc file "kis_screen_color_picker.moc", but does not contain a Q_OBJECT, Q_GADGET, Q_NAMESPACE, K_PLUGIN_FACTORY, K_PLUGIN_FACTORY_WITH_JSON or K_PLUGIN_CLASS_WITH_JSON macro.
+
+[ 59%] Built target kritaui_autogen
+[ 59%] Building CXX object libs/ui/CMakeFiles/kritaui.dir/kritaui_autogen/mocs_compilation.cpp.o
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:220:6: error: 'WdgShortcutSettings' has not been declared
+ void WdgShortcutSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:228:38: error: 'WdgShortcutSettings' has not been declared
+ QT_INIT_METAOBJECT const QMetaObject WdgShortcutSettings::staticMetaObject = {
+                                      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:229:8: error: 'KisShortcutsDialog' has not been declared
+     { &KisShortcutsDialog::staticMetaObject, qt_meta_stringdata_WdgShortcutSettings.data,
+        ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:234:20: error: 'WdgShortcutSettings' has not been declared
+ const QMetaObject *WdgShortcutSettings::metaObject() const
+                    ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:234:54: error: non-member function 'const QMetaObject* metaObject()' cannot have cv-qualifier
+ const QMetaObject *WdgShortcutSettings::metaObject() const
+                                                      ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h: In function 'const QMetaObject* metaObject()':
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: 'QScopedPointer<QObjectData> QObject::d_ptr' is protected
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:236:21: error: within this context
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                     ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: invalid use of non-static data member 'QObject::d_ptr'
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:236:21: error: from this location
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                     ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: 'QScopedPointer<QObjectData> QObject::d_ptr' is protected
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:236:50: error: within this context
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                                                  ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: invalid use of non-static data member 'QObject::d_ptr'
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:236:50: error: from this location
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                                                  ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: At global scope:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:239:7: error: 'WdgShortcutSettings' has not been declared
+ void *WdgShortcutSettings::qt_metacast(const char *_clname)
+       ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'void* qt_metacast(const char*)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:243:35: error: invalid use of 'this' in non-member function
+         return static_cast<void*>(this);
+                                   ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:244:12: error: 'KisShortcutsDialog' has not been declared
+     return KisShortcutsDialog::qt_metacast(_clname);
+            ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: At global scope:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:247:5: error: 'WdgShortcutSettings' has not been declared
+ int WdgShortcutSettings::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+     ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'int qt_metacall(QMetaObject::Call, int, void**)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:249:11: error: 'KisShortcutsDialog' has not been declared
+     _id = KisShortcutsDialog::qt_metacall(_c, _id, _a);
+           ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: At global scope:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:298:6: error: 'ShortcutSettingsTab' has not been declared
+ void ShortcutSettingsTab::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'void qt_static_metacall(QObject*, QMetaObject::Call, int, void**)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:298:6: error: redefinition of 'void qt_static_metacall(QObject*, QMetaObject::Call, int, void**)'
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:220:6: note: 'void qt_static_metacall(QObject*, QMetaObject::Call, int, void**)' previously defined here
+ void WdgShortcutSettings::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:9: error: 'ShortcutSettingsTab' was not declared in this scope
+         ShortcutSettingsTab *_t = static_cast<ShortcutSettingsTab *>(_o);
+         ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:30: error: '_t' was not declared in this scope
+         ShortcutSettingsTab *_t = static_cast<ShortcutSettingsTab *>(_o);
+                              ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:47: error: 'ShortcutSettingsTab' does not name a type
+         ShortcutSettingsTab *_t = static_cast<ShortcutSettingsTab *>(_o);
+                                               ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:67: error: expected '>' before '*' token
+         ShortcutSettingsTab *_t = static_cast<ShortcutSettingsTab *>(_o);
+                                                                   ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:67: error: expected '(' before '*' token
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:68: error: expected primary-expression before '>' token
+         ShortcutSettingsTab *_t = static_cast<ShortcutSettingsTab *>(_o);
+                                                                    ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:301:73: error: expected ')' before ';' token
+         ShortcutSettingsTab *_t = static_cast<ShortcutSettingsTab *>(_o);
+                                                                         ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: At global scope:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:312:38: error: 'ShortcutSettingsTab' has not been declared
+ QT_INIT_METAOBJECT const QMetaObject ShortcutSettingsTab::staticMetaObject = {
+                                      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:312:59: error: redefinition of 'const QMetaObject staticMetaObject'
+ QT_INIT_METAOBJECT const QMetaObject ShortcutSettingsTab::staticMetaObject = {
+                                                           ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:228:38: note: 'const QMetaObject staticMetaObject' previously declared here
+ QT_INIT_METAOBJECT const QMetaObject WdgShortcutSettings::staticMetaObject = {
+                                      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:318:20: error: 'ShortcutSettingsTab' has not been declared
+ const QMetaObject *ShortcutSettingsTab::metaObject() const
+                    ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:318:54: error: non-member function 'const QMetaObject* metaObject()' cannot have cv-qualifier
+ const QMetaObject *ShortcutSettingsTab::metaObject() const
+                                                      ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'const QMetaObject* metaObject()':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:318:20: error: redefinition of 'const QMetaObject* metaObject()'
+ const QMetaObject *ShortcutSettingsTab::metaObject() const
+                    ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:234:20: note: 'const QMetaObject* metaObject()' previously defined here
+ const QMetaObject *WdgShortcutSettings::metaObject() const
+                    ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: 'QScopedPointer<QObjectData> QObject::d_ptr' is protected
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:320:21: error: within this context
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                     ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: invalid use of non-static data member 'QObject::d_ptr'
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:320:21: error: from this location
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                     ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: 'QScopedPointer<QObjectData> QObject::d_ptr' is protected
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:320:50: error: within this context
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                                                  ^
+In file included from /home/dashed/Qt/5.11.1/android_armv7/include/QtCore/QObject:1:0,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/KisAsyncAnimationRenderDialogBase.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_KisAsyncAnimationRenderDialogBase.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:2:
+/home/dashed/Qt/5.11.1/android_armv7/include/QtCore/qobject.h:433:33: error: invalid use of non-static data member 'QObject::d_ptr'
+     QScopedPointer<QObjectData> d_ptr;
+                                 ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:320:50: error: from this location
+     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+                                                  ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: At global scope:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:323:7: error: 'ShortcutSettingsTab' has not been declared
+ void *ShortcutSettingsTab::qt_metacast(const char *_clname)
+       ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'void* qt_metacast(const char*)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:323:7: error: redefinition of 'void* qt_metacast(const char*)'
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:239:7: note: 'void* qt_metacast(const char*)' previously defined here
+ void *WdgShortcutSettings::qt_metacast(const char *_clname)
+       ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:327:35: error: invalid use of 'this' in non-member function
+         return static_cast<void*>(this);
+                                   ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:328:40: error: cannot call member function 'virtual void* QWidget::qt_metacast(const char*)' without object
+     return QWidget::qt_metacast(_clname);
+                                        ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: At global scope:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:331:5: error: 'ShortcutSettingsTab' has not been declared
+ int ShortcutSettingsTab::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+     ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'int qt_metacall(QMetaObject::Call, int, void**)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:331:5: error: redefinition of 'int qt_metacall(QMetaObject::Call, int, void**)'
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:247:5: note: 'int qt_metacall(QMetaObject::Call, int, void**)' previously defined here
+ int WdgShortcutSettings::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+     ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:333:43: error: cannot call member function 'virtual int QWidget::qt_metacall(QMetaObject::Call, int, void**)' without object
+     _id = QWidget::qt_metacall(_c, _id, _a);
+                                           ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:338:32: error: invalid use of 'this' in non-member function
+             qt_static_metacall(this, _c, _id, _a);
+                                ^
+In file included from /home/dashed/Documents/krita/src/libs/pigment/KoColor.h:28:0,
+                 from /home/dashed/Documents/krita/src/libs/image/KisProofingConfiguration.h:4,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/../../../../../src/libs/ui/dialogs/kis_dlg_image_properties.h:22,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_image_properties.cpp:9,
+                 from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:11:
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static const channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(const quint8*) [with _channels_type_ = short unsigned int; int _channels_nb_ = 4; int _alpha_pos_ = 3; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = short unsigned int; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoLabColorSpaceTraits.h:178:34:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:113:56: warning: cast from 'const quint8* {aka const unsigned char*}' to 'const channels_type* {aka const short unsigned int*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast<const channels_type*>(a);
+                                                        ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(quint8*) [with _channels_type_ = short unsigned int; int _channels_nb_ = 4; int _alpha_pos_ = 3; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = short unsigned int; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoLabColorSpaceTraits.h:241:30:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:120:51: warning: cast from 'quint8* {aka unsigned char*}' to 'KoColorSpaceTrait<short unsigned int, 4, 3>::channels_type* {aka short unsigned int*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast< channels_type*>(a);
+                                                   ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static const channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(const quint8*) [with _channels_type_ = float; int _channels_nb_ = 4; int _alpha_pos_ = 3; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = float; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoLabColorSpaceTraits.h:318:42:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:113:56: warning: cast from 'const quint8* {aka const unsigned char*}' to 'const channels_type* {aka const float*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast<const channels_type*>(a);
+                                                        ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(quint8*) [with _channels_type_ = float; int _channels_nb_ = 4; int _alpha_pos_ = 3; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = float; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoLabColorSpaceTraits.h:347:38:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:120:51: warning: cast from 'quint8* {aka unsigned char*}' to 'KoColorSpaceTrait<float, 4, 3>::channels_type* {aka float*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast< channels_type*>(a);
+                                                   ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static const channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(const quint8*) [with _channels_type_ = double; int _channels_nb_ = 4; int _alpha_pos_ = 3; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = double; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoLabColorSpaceTraits.h:366:42:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:113:56: warning: cast from 'const quint8* {aka const unsigned char*}' to 'const channels_type* {aka const double*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast<const channels_type*>(a);
+                                                        ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(quint8*) [with _channels_type_ = double; int _channels_nb_ = 4; int _alpha_pos_ = 3; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = double; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoLabColorSpaceTraits.h:395:38:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:120:51: warning: cast from 'quint8* {aka unsigned char*}' to 'KoColorSpaceTrait<double, 4, 3>::channels_type* {aka double*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast< channels_type*>(a);
+                                                   ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static const channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(const quint8*) [with _channels_type_ = float; int _channels_nb_ = 5; int _alpha_pos_ = 4; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = float; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoCmykColorSpaceTraits.h:162:42:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:113:56: warning: cast from 'const quint8* {aka const unsigned char*}' to 'const channels_type* {aka const float*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast<const channels_type*>(a);
+                                                        ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(quint8*) [with _channels_type_ = float; int _channels_nb_ = 5; int _alpha_pos_ = 4; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = float; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoCmykColorSpaceTraits.h:188:38:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:120:51: warning: cast from 'quint8* {aka unsigned char*}' to 'KoColorSpaceTrait<float, 5, 4>::channels_type* {aka float*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast< channels_type*>(a);
+                                                   ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static const channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(const quint8*) [with _channels_type_ = double; int _channels_nb_ = 5; int _alpha_pos_ = 4; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = double; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoCmykColorSpaceTraits.h:204:42:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:113:56: warning: cast from 'const quint8* {aka const unsigned char*}' to 'const channels_type* {aka const double*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast<const channels_type*>(a);
+                                                        ^
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h: In instantiation of 'static KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type* KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::nativeArray(quint8*) [with _channels_type_ = double; int _channels_nb_ = 5; int _alpha_pos_ = 4; KoColorSpaceTrait<_channels_type_, _channels_nb_, _alpha_pos_>::channels_type = double; quint8 = unsigned char]':
+/home/dashed/Documents/krita/src/libs/pigment/KoCmykColorSpaceTraits.h:230:38:   required from here
+/home/dashed/Documents/krita/src/libs/pigment/KoColorSpaceTraits.h:120:51: warning: cast from 'quint8* {aka unsigned char*}' to 'KoColorSpaceTrait<double, 5, 4>::channels_type* {aka double*}' increases required alignment of target type [-Wcast-align]
+         return reinterpret_cast< channels_type*>(a);
+                                                   ^
+In file included from /home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/mocs_compilation.cpp:17:0:
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'const QMetaObject* metaObject()':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:237:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'void* qt_metacast(const char*)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:245:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'const QMetaObject* metaObject()':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:321:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp: In function 'void* qt_metacast(const char*)':
+/home/dashed/Documents/krita/build/libs/ui/kritaui_autogen/2NRMJ5X7RK/moc_kis_dlg_preferences.cpp:329:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1plus: some warnings being treated as errors
+make[3]: *** [libs/ui/CMakeFiles/kritaui.dir/build.make:5191: libs/ui/CMakeFiles/kritaui.dir/kritaui_autogen/mocs_compilation.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:18314: libs/ui/CMakeFiles/kritaui.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:18326: libs/ui/CMakeFiles/kritaui.dir/rule] Error 2
+make: *** [Makefile:5856: kritaui] Error 2

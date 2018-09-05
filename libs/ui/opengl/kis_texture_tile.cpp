@@ -32,6 +32,7 @@
 void KisTextureTile::setTextureParameters()
 {
 
+#ifndef __ANDROID__
     f->glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     f->glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     f->glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_LOD, 0);
@@ -47,6 +48,7 @@ void KisTextureTile::setTextureParameters()
     }
 
     f->glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+#endif
 }
 
 inline QRectF relativeRect(const QRect &br /* baseRect */,

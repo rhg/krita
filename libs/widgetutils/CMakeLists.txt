@@ -33,16 +33,16 @@ set(kritawidgetutils_LIB_SRCS
     config/krecentfilesaction.cpp
     config/kstandardaction.cpp
 
-    xmlgui/KisShortcutsEditorItem.cpp
-    xmlgui/KisShortcutEditWidget.cpp
-    xmlgui/KisShortcutsEditorDelegate.cpp
-    xmlgui/KisShortcutsDialog.cpp
-    xmlgui/KisShortcutsDialog_p.cpp
-    xmlgui/KisShortcutsEditor.cpp
-    xmlgui/KisShortcutsEditor_p.cpp
+    # xmlgui/KisShortcutsEditorItem.cpp
+    # xmlgui/KisShortcutEditWidget.cpp
+    # xmlgui/KisShortcutsEditorDelegate.cpp
+    # xmlgui/KisShortcutsDialog.cpp
+    # xmlgui/KisShortcutsDialog_p.cpp
+    # xmlgui/KisShortcutsEditor.cpp
+    # xmlgui/KisShortcutsEditor_p.cpp
 
-    xmlgui/kshortcutschemeseditor.cpp
-    xmlgui/kshortcutschemeshelper.cpp
+    # xmlgui/kshortcutschemeseditor.cpp
+    # xmlgui/kshortcutschemeshelper.cpp
 
     xmlgui/kaboutkdedialog_p.cpp
     xmlgui/kactioncategory.cpp
@@ -54,10 +54,10 @@ set(kritawidgetutils_LIB_SRCS
     xmlgui/kgesture.cpp
     xmlgui/kgesturemap.cpp
     xmlgui/khelpmenu.cpp
-    xmlgui/kkeysequencewidget.cpp
+    # xmlgui/kkeysequencewidget.cpp
     xmlgui/kmainwindow.cpp
     xmlgui/kmenumenuhandler_p.cpp
-    xmlgui/kshortcutwidget.cpp
+    # xmlgui/kshortcutwidget.cpp
     xmlgui/kswitchlanguagedialog_p.cpp
     xmlgui/ktoggletoolbaraction.cpp
     xmlgui/ktoolbar.cpp
@@ -78,7 +78,7 @@ if (HAVE_DBUS)
 endif()
 
 ki18n_wrap_ui(kritawidgetutils_LIB_SRCS
-    xmlgui/KisShortcutsDialog.ui
+	# xmlgui/KisShortcutsDialog.ui
     xmlgui/kshortcutwidget.ui
 )
 
@@ -119,7 +119,7 @@ target_link_libraries(kritawidgetutils
         KF5::ConfigGui
         KF5::GuiAddons
         KF5::WidgetsAddons
-        KF5::WindowSystem
+	# KF5::WindowSystem
         kritaplugin
         kritaodf
         ${KRITA_WIDGET_UTILS_EXTRA_LIBS}

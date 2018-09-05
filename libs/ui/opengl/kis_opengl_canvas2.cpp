@@ -102,7 +102,7 @@ public:
     QVector3D vertices[6];
     QVector2D texCoords[6];
 
-#ifndef Q_OS_OSX
+#if !defined(Q_OS_OSX) && !defined(__ANDROID__)
     QOpenGLFunctions_2_1 *glFn201;
 #endif
 
@@ -232,7 +232,7 @@ void KisOpenGLCanvas2::initializeGL()
 {
     KisOpenGL::initializeContext(context());
     initializeOpenGLFunctions();
-#ifndef Q_OS_OSX
+#if !defined(Q_OS_OSX) && !defined(__ANDROID__)
     if (!KisOpenGL::hasOpenGLES()) {
         d->glFn201 = context()->versionFunctions<QOpenGLFunctions_2_1>();
         if (!d->glFn201) {
@@ -398,6 +398,7 @@ void KisOpenGLCanvas2::paintToolOutline(const QPainterPath &path)
     d->solidColorShader->setUniformValue(d->solidColorShader->location(Uniform::ModelViewProjection), modelMatrix);
 
     if (!KisOpenGL::hasOpenGLES()) {
+#ifndef __ANDROID__
         glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
 
         glEnable(GL_COLOR_LOGIC_OP);
@@ -407,6 +408,7 @@ void KisOpenGLCanvas2::paintToolOutline(const QPainterPath &path)
         }
 #else
         glLogicOp(GL_XOR);
+#endif
 #endif
     } else {
         glEnable(GL_BLEND);
@@ -452,11 +454,13 @@ void KisOpenGLCanvas2::paintToolOutline(const QPainterPath &path)
         d->outlineVAO.release();
     }
 
+#ifndef __ANDROID__
     if (!KisOpenGL::hasOpenGLES()) {
         glDisable(GL_COLOR_LOGIC_OP);
     } else {
         glDisable(GL_BLEND);
     }
+#endif
 
     d->solidColorShader->release();
 }

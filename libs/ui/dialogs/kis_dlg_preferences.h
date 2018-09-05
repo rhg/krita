@@ -37,7 +37,9 @@
 #include "ui_wdgtabletsettings.h"
 #include "ui_wdgperformancesettings.h"
 #include "ui_wdgfullscreensettings.h"
+#ifndef __ANDROID__
 #include "KisShortcutsDialog.h"
+#endif
 
 class KoID;
 class KisInputConfigurationPage;
@@ -99,6 +101,7 @@ private Q_SLOTS:
 
 
 
+#ifndef __ANDROID__
 /**
  *  "Shortcuts" tab for preferences dialog
  */
@@ -136,6 +139,7 @@ public Q_SLOTS:
     void saveChanges();
     void cancelChanges();
 };
+#endif
 
 
 
@@ -330,7 +334,9 @@ protected:
 protected:
 
     GeneralTab *m_general;
+#ifndef __ANDROID__
     ShortcutSettingsTab  *m_shortcutSettings;
+#endif
     ColorSettingsTab *m_colorSettings;
     PerformanceTab *m_performanceSettings;
     DisplaySettingsTab  *m_displaySettings;

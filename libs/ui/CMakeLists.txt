@@ -433,9 +433,9 @@ if(UNIX)
     if(NOT APPLE)
         set(kritaui_LIB_SRCS
             ${kritaui_LIB_SRCS}
-            input/wintab/qxcbconnection_xi2.cpp
-            input/wintab/qxcbconnection.cpp
-            input/wintab/kis_xi2_event_filter.cpp
+	    # input/wintab/qxcbconnection_xi2.cpp
+	    #input/wintab/qxcbconnection.cpp
+            #input/wintab/kis_xi2_event_filter.cpp
             )
     endif()
 endif()
@@ -558,12 +558,16 @@ endif ()
 target_link_libraries(kritaui ${OPENEXR_LIBRARIES})
 
 # Add VSync disable workaround
-if(NOT WIN32 AND NOT APPLE)
+if(NOT WIN32 AND NOT APPLE AND NOT ANDROID)
     target_link_libraries(kritaui ${CMAKE_DL_LIBS} Qt5::X11Extras)
 endif()
 
 if(X11_FOUND)
     target_link_libraries(kritaui Qt5::X11Extras ${X11_LIBRARIES})
+endif()
+
+if(ANDROID)
+    target_link_libraries(kritaui GLESv3)
 endif()
 
 target_include_directories(kritaui

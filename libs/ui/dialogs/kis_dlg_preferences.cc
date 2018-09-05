@@ -375,6 +375,7 @@ void GeneralTab::clearBackgroundImage()
     m_backgroundimage->setText("");
 }
 
+#ifndef __ANDROID__
 #include "kactioncollection.h"
 #include "KisActionsSnapshot.h"
 
@@ -425,6 +426,7 @@ void ShortcutSettingsTab::cancelChanges()
 {
     m_page->undo();
 }
+#endif
 
 ColorSettingsTab::ColorSettingsTab(QWidget *parent, const char *name)
     : QWidget(parent)
@@ -1139,6 +1141,7 @@ KisDlgPreferences::KisDlgPreferences(QWidget* parent, const char* name)
     addPage(page);
     m_general = new GeneralTab(vbox);
 
+#ifndef __ANDROID__
     // Shortcuts
     vbox = new KoVBox();
     page = new KPageWidgetItem(vbox, i18n("Keyboard Shortcuts"));
@@ -1149,6 +1152,7 @@ KisDlgPreferences::KisDlgPreferences(QWidget* parent, const char* name)
     m_shortcutSettings = new ShortcutSettingsTab(vbox);
     connect(this, SIGNAL(accepted()), m_shortcutSettings, SLOT(saveChanges()));
     connect(this, SIGNAL(rejected()), m_shortcutSettings, SLOT(cancelChanges()));
+#endif
 
     // Canvas input settings
     m_inputConfiguration = new KisInputConfigurationPage();
@@ -1245,9 +1249,11 @@ void KisDlgPreferences::slotDefault()
     if (currentPage()->objectName() == "general") {
         m_general->setDefault();
     }
+#ifndef __ANDROID__
     else if (currentPage()->objectName() == "shortcuts") {
         m_shortcutSettings->setDefault();
     }
+#endif
     else if (currentPage()->objectName() == "display") {
         m_displaySettings->setDefault();
     }

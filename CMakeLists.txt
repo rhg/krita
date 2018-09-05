@@ -264,7 +264,7 @@ find_package(KF5 ${MIN_FRAMEWORKS_VERSION} REQUIRED COMPONENTS
         I18n
         ItemModels
         ItemViews
-        WindowSystem
+	# WindowSystem
 )
 
 # KConfig deprecated authorizeKAction. In order to be warning free,
@@ -327,9 +327,9 @@ set_package_properties(Qt5QuickWidgets PROPERTIES
         PURPOSE "Optionally used for the touch gui for Krita")
 endif()
 
-if (NOT WIN32 AND NOT APPLE)
+if (NOT WIN32 AND NOT APPLE AND NOT ANDROID)
 
-    find_package(Qt5 ${MIN_QT_VERSION} REQUIRED X11Extras)
+	#find_package(Qt5 ${MIN_QT_VERSION} REQUIRED AndroidExtras)
 
     find_package(Qt5DBus ${MIN_QT_VERSION})
     set(HAVE_DBUS ${Qt5DBus_FOUND})
@@ -362,6 +362,7 @@ if (NOT WIN32 AND NOT APPLE)
     find_package(XCB COMPONENTS XCB ATOM)
     set(HAVE_XCB ${XCB_FOUND})
 else()
+    #find_package(Qt5 ${MIN_QT_VERSION} REQUIRED AndroidExtras)
     set(HAVE_DBUS FALSE)
     set(HAVE_X11 FALSE)
     set(HAVE_XCB FALSE)

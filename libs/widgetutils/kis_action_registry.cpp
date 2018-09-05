@@ -151,7 +151,7 @@ KisActionRegistry::KisActionRegistry()
 {
     KConfigGroup cg = KSharedConfig::openConfig()->group("Shortcut Schemes");
     QString schemeName = cg.readEntry("Current Scheme", "Default");
-    loadShortcutScheme(schemeName);
+    // loadShortcutScheme(schemeName);
     loadCustomShortcuts();
 }
 
@@ -173,21 +173,21 @@ void KisActionRegistry::loadCustomShortcuts()
     d->loadCustomShortcuts();
 }
 
-void KisActionRegistry::loadShortcutScheme(const QString &schemeName)
-{
-    // Load scheme file
-    if (schemeName != QStringLiteral("Default")) {
-        QString schemeFileName = KShortcutSchemesHelper::schemeFileLocations().value(schemeName);
-        if (schemeFileName.isEmpty()) {
-            return;
-        }
-        KConfig schemeConfig(schemeFileName, KConfig::SimpleConfig);
-        applyShortcutScheme(&schemeConfig);
-    } else {
-        // Apply default scheme, updating KisActionRegistry data
-        applyShortcutScheme();
-    }
-}
+// void KisActionRegistry::loadShortcutScheme(const QString &schemeName)
+// {
+//     // Load scheme file
+//     if (schemeName != QStringLiteral("Default")) {
+//         QString schemeFileName = KShortcutSchemesHelper::schemeFileLocations().value(schemeName);
+//         if (schemeFileName.isEmpty()) {
+//             return;
+//         }
+//         KConfig schemeConfig(schemeFileName, KConfig::SimpleConfig);
+//         applyShortcutScheme(&schemeConfig);
+//     } else {
+//         // Apply default scheme, updating KisActionRegistry data
+//         applyShortcutScheme();
+//     }
+// }
 
 QAction * KisActionRegistry::makeQAction(const QString &name, QObject *parent)
 {

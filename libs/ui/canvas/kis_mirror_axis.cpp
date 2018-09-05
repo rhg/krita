@@ -162,11 +162,11 @@ void KisMirrorAxis::drawDecoration(QPainter& gc, const QRectF& updateArea, const
 
     // QPainter cannot anti-alias the edges of circles etc. when using OpenGL
     // So instead, use native OpenGL anti-aliasing when available.
-    if (hasMultisample) {
-        gc.beginNativePainting();
-        ctx->functions()->glEnable(GL_MULTISAMPLE);
-        gc.endNativePainting();
-    }
+    // if (hasMultisample) {
+    //     gc.beginNativePainting();
+    //     ctx->functions()->glEnable(GL_MULTISAMPLE);
+    //     gc.endNativePainting();
+    // }
 
     float halfHandleSize = d->handleSize / 2;
 
@@ -227,7 +227,6 @@ void KisMirrorAxis::drawDecoration(QPainter& gc, const QRectF& updateArea, const
 
     if (hasMultisample) {
         gc.beginNativePainting();
-        ctx->functions()->glDisable(GL_MULTISAMPLE);
         gc.endNativePainting();
     }
 
